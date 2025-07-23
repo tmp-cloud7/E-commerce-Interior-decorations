@@ -48,7 +48,7 @@ const Home = ({detail, view, close, setClose, addtocart, wishlist}) => {
             <div className="container">
                 <div className="detail">
                     <h2>Design Your <br /> Comfort Zone </h2>
-                    <p>Carefully curated trinkets make your house a home, and <br /> express your pesronality. But it's not just what you display, it's how you display it. </p>                   
+                    <p>Carefully curated trinkets make your house a home, and <br /> express your peonality. But it's not just what you display, it's how you display it. </p>                   
                     <Link to='/product' className="link">Catalog</Link>
                 </div>
                 <div className="image_box">
@@ -56,7 +56,7 @@ const Home = ({detail, view, close, setClose, addtocart, wishlist}) => {
                 </div>
             </div>
         </div>
-        <div className="banner">    
+        {/* <div className="banner">    
             <div className="container">                
                 <img src="/img/banner_9.jpg" alt="lightimg" height='350px'></img> 
                 <div className="text">
@@ -73,7 +73,32 @@ const Home = ({detail, view, close, setClose, addtocart, wishlist}) => {
                     <Link to='/product' className="link">Shop Now < FaArrowRight /></Link>
                 </div>               
             </div>
-        </div> 
+        </div>  */}
+        <div className="banner">
+            <div className="container">
+                <picture>
+                <source srcSet="/img/banner_9_mobile.png" media="(max-width: 768px)" />
+                <img src="/img/banner_9.jpg" alt="Lighting Banner" />
+                </picture>
+                <div className="text">
+                <h3><i>All Lighting</i></h3>
+                <p>Experience the perfect ambiance with our state-of-the-art lighting solutions...</p>
+                <Link to="/product" className="link">Explore</Link>
+                </div>
+            </div>
+            <div className="container">
+                <picture>
+                <source srcSet="/img/banner_10_mobile.jpg" media="(max-width: 768px)" />
+                <img src="/img/banner_10.jpg" alt="decorimg" />
+                </picture>
+                <div className="text">
+                <h3><i>New Arrivals</i></h3>
+                <p>Discover our latest arrivals, curated to inspire...</p>
+                <Link to="/product" className="link">Explore</Link>
+                </div>
+            </div>
+        </div>
+
         <div className="product_type">
             <div className="container">
                 <div className="box">

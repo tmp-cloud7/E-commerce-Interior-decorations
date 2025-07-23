@@ -55,7 +55,11 @@ const Wish = ({ wish, setWish, cart, setCart}) => {
                                 <p><TbCurrencyNaira />{curElm.price}</p>
                                 <button onClick={() => addtocart(curElm)} >Add to cart</button>
                                 <div className="close">
-                                <button onClick={() => removeproduct(curElm)}><IoCloseOutline /></button>
+                                <div className="close">
+                                    <button onClick={() => removeproduct(curElm)}>
+                                    <IoCloseOutline />
+                                    </button>
+                                </div>
                                 </div>
                             </div>
                         </div>

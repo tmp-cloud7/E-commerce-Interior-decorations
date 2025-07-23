@@ -1,40 +1,102 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif; 
-    box-sizing: border-box;
- }
-
-.about {
-    padding: 10px, 30px;
+    font-family: sans-serif;
+    box-sizing: content-box;
+  }
+  
+  .about {
+    padding: 10px 30px;
     width: 100%;
-}
-
-.about .container {
+  }
+  
+  .about .container {
     padding: 20px 40px;
     max-width: 100%;
-}
-
-.about .container img {
-    height: 330px;
-    width: 1200px;
+  }
+  
+  .about .container img {
+    height: auto; 
     width: 100%;
-}
-
-.about h2 {
+    display: block;
+  }
+  
+  /* Headings */
+  .about h2 {
     margin-top: 68px;
     text-transform: uppercase;
     font-size: 32px;
     color: #010f1c;
     font-weight: 200;
-    margin-left: 450px;
-}
-
-.about h3 {
+    text-align: center; /* Center heading */
+    margin-left: 0; /* Remove left margin */
+  }
+  
+  .about h3 {
     margin-top: 25px;
-    padding: 13px 50px  
-}
-
-.about p {
+    padding: 13px 50px;
+    text-align: center; /* Center text */
+  }
+  
+  .about p {
     padding: 0px 50px;
-}
+    text-align: center; /* Center text */
+  }
+  
+  /* MEDIA QUERIES */
+  
+  /* Tablets and below */
+  @media (max-width: 768px) {
+    /* Ensure the content is still visible */
+    .about {
+      padding: 10px 20px; /* Adjust padding for smaller devices */
+    }
+  
+    .about .container {
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .about h2 {
+      font-size: 28px; /* Smaller heading font for tablets */
+      margin-left: 0; /* Ensure no left margin */
+      margin-top: 40px; /* Adjust top margin for spacing */
+    }
+  
+    .about h3 {
+      padding: 13px 30px; /* Adjust padding */
+      font-size: 18px; /* Smaller font size for tablets */
+    }
+  
+    .about p {
+      padding: 0px 30px; /* Adjust padding */
+      font-size: 16px; /* Adjust text size */
+    }
+  
+    .about .container img {
+      display: none; /* Hide the image on tablets and below */
+    }
+  }
+  
+  /* Phones */
+  @media (max-width: 480px) {
+    .about h2 {
+      font-size: 24px; /* Smaller font size for mobile */
+      margin-top: 20px; /* Adjust top margin for mobile */
+    
+    }
+  
+    .about h3 {
+      padding: 13px 20px; /* Further reduce padding for mobile */
+      font-size: 16px; /* Further reduce font size */
+    }
+  
+    .about p {
+      padding: 0px 15px; /* Reduce padding for mobile */
+      font-size: 14px; /* Smaller text size */
+    }
+  
+    .about .container {
+      padding: 10px 20px; /* Adjust container padding for mobile */
+    }
+  }
+  

@@ -39,9 +39,20 @@
     padding: 20px 30px;
 }
 
-.wishcontainer .contant .wish_item {
+/* .wishcontainer .contant .wish_item {
     padding: 20px 30px;
     display: flex;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+
+.wishcontainer .contant .wish_item {
+    position: relative; /* needed for absolute positioning inside */
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
     background: #fff;
     border-radius: 5px;
     margin-top: 10px;
@@ -99,13 +110,19 @@
     background: #010f1c;
     cursor: pointer;
 }
-
+/* 
 .wishcontainer .contant .wish_item .detail .close {
     margin-top: -165px;
     margin-left: 320px;
+} */
+
+.wishcontainer .contant .wish_item .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
-.wishcontainer .contant .wish_item .detail .close button {
+/* .wishcontainer .contant .wish_item .detail .close button {
     border: none;
     outline: none;
     font-size: 22px;
@@ -113,4 +130,121 @@
     background: none;
     cursor: pointer;
    
+} */
+.wishcontainer .contant .wish_item .close button {
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #db0045;
+    background: none;
+    cursor: pointer;
 }
+
+/* Base styles remain the same */
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .wishcontainer {
+      padding: 30px 20px;
+    }
+  
+    .wishcontainer .emptywish {
+      margin-left: 25%;
+    }
+  
+    .wishcontainer .contant .wish_item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .wishcontainer .contant .wish_item .img_box img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .wishcontainer .contant .wish_item .detail {
+      margin-left: 0;
+      margin-top: 20px;
+      padding: 10px;
+    }
+  
+    .wishcontainer .contant .wish_item .detail .close {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wishcontainer {
+      padding: 20px 10px;
+    }
+  
+    .wishcontainer .emptywish {
+      margin-left: 10%;
+      text-align: center;
+    }
+  
+    .wishcontainer .emptywish h2 {
+      font-size: 24px;
+    }
+  
+    .wishcontainer .emptywish .emptywishbtn {
+      margin-left: 0;
+      display: inline-block;
+      margin-top: 15px;
+    }
+  
+    .wishcontainer .contant {
+      padding: 10px;
+    }
+  
+    .wishcontainer .contant .wish_item {
+      padding: 10px;
+      border-radius: 3px;
+    }
+  
+    .wishcontainer .contant .wish_item .img_box img {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .wishcontainer .contant .wish_item .detail h3 {
+      font-size: 18px;
+    }
+  
+    .wishcontainer .contant .wish_item .detail p {
+      font-size: 16px;
+    }
+  
+    .wishcontainer .contant .wish_item .detail .close {
+      right: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wishcontainer .contant .wish_item .img_box img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .wishcontainer .contant .wish_item .detail button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .wishcontainer .contant .wish_item .detail h3 {
+      font-size: 16px;
+    }
+  
+    .wishcontainer .contant .wish_item .detail p {
+      font-size: 14px;
+    }
+  
+    .wishcontainer .contant .wish_item .detail .close button {
+      font-size: 18px;
+    }
+  }
+  

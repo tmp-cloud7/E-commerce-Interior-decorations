@@ -16,6 +16,7 @@
     max-width: 100%;
     display: flex;
     justify-content: space-between;
+   
 }
 
 .footer .container .about {
@@ -105,16 +106,22 @@
     color: #f3b123;
 }
 
-@media only screen and (max-width: 426px) {
-
-.footer .container {
-    max-width: 426px;
-    min-height: 500px;
-    display: grid ;
-    gap: 2 rem;
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-start;
-}
 
 
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .container .logo,
+    .footer .container .links {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .container .links ul {
+        padding-left: 0;
+    }
 }

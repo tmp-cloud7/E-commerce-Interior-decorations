@@ -265,3 +265,115 @@
 .product_detail .container .productbox .detail button:hover {
     background: #f3b123;
 }
+
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
+    .products {
+        padding: 20px;
+    }
+
+    .products .container {
+        flex-direction: column;
+    }
+
+    .products .container .filter {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .products .container .filter .categories ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .products .container .filter .categories ul li {
+        margin-top: 0;
+        padding: 5px 10px;
+        background: #f1f1f1;
+        border-radius: 5px;
+    }
+
+    .products .container .productbox {
+        margin-right: 0;
+    }
+
+    .products .container .productbox .contant {
+        justify-content: center;
+    }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 600px) {
+    .products h2 {
+        font-size: 28px;
+    }
+
+    .products p {
+        font-size: 14px;
+    }
+
+    .products .container .productbox .contant .box {
+        width: 90%;
+        height: auto;
+    }
+
+    .products .container .productbox .contant .box .img_box img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .products .container .productbox .contant .box .img_box .icon {
+        right: -40px;
+    }
+
+    .products .container .productbox .contant .box .img_box:hover .icon {
+        transform: translateX(-50px);
+    }
+
+    .product_detail .container {
+        width: 95%;
+        height: auto;
+        margin: 50px auto;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .product_detail .container .productbox {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .product_detail .container .productbox .img-box {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background: none;
+    }
+
+    .product_detail .container .productbox .img-box img {
+        width: 70%;
+        height: auto;
+    }
+
+    .product_detail .container .productbox .detail {
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+
+    .product_detail .container .closebtn {
+        margin-left: auto;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .product_detail .container .productbox .detail button {
+        width: 100%;
+        padding: 15px;
+    }
+}
