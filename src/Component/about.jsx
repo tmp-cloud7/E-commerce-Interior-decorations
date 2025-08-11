@@ -5,10 +5,10 @@ const About = () => {
     return (
         <div className="about">
             <div className="container">
-                {/* Image for the banner */}
                 <img src="/img/about_banner2.jpg" alt="About Banner" />
             </div>
-            
+            <h1 style={{ color: 'red' }}>ABOUT PAGE</h1>
+
             <h2>Our Story</h2>
             <h3>Established in 2024</h3>
             <p>

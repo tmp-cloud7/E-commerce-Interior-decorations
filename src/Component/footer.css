@@ -29,12 +29,12 @@
     color: #010f1c;
 }
 
-.footer .container .about .detail .icon {
+.footer .container .about .detail .icon ul {
     margin-top: 20px;
     display: flex;
 }
 
-.footer .container .about .detail .icon li {
+.footer .container .about .detail .icon ul li {
     margin-left: 20px;
     list-style: none;
     padding: 10px 10px;
@@ -106,9 +106,136 @@
     color: #f3b123;
 }
 
+/* Default styles are for desktop and large screens */
+
+/* Medium devices/tablets: 769px to 1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .footer {
+    padding: 25px 30px;
+  }
+
+  .footer .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .footer .container .about,
+  .footer .container .account,
+  .footer .container .pages {
+    max-width: 45%;
+    margin-right: 0;
+  }
+
+  .footer .container .account,
+  .footer .container .pages {
+    margin-top: 20px;
+  }
+
+  .footer .container .account h3,
+  .footer .container .pages h3 {
+    font-size: 28px;
+  }
+
+  .footer .container .account ul li .link,
+  .footer .container .pages ul li .link {
+    font-size: 13px;
+  }
+}
+
+/* Responsive styles for small screens: 320px to 768px */
+@media (max-width: 768px) and (min-width: 320px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .container .about,
+  .footer .container .account,
+  .footer .container .pages {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer .container .about .logo {
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  .footer .container .about .logo img {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+  }
+
+  .footer .container .about .detail p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333;
+  }
+
+  .footer .container .about .detail .icon ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .footer .container .about .detail .icon ul li {
+    list-style: none;
+    margin: 5px;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .footer .container .about .detail .icon ul li a {
+    font-size: 18px;
+    color: #010f1c;
+  }
+
+  .footer .container .account h3,
+  .footer .container .pages h3 {
+    font-size: 20px;
+  }
+
+  .footer .container .account ul,
+  .footer .container .pages ul {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .footer .container .account ul li,
+  .footer .container .pages ul li {
+    list-style: none;
+    margin: 5px 0;
+  }
+
+  .footer .container .account ul li .link,
+  .footer .container .pages ul li .link {
+    font-size: 14px;
+    color: #010f1c;
+    text-decoration: none;
+  }
+
+  .footer .container .account ul li .link:hover,
+  .footer .container .pages ul li .link:hover {
+    color: #f3b123;
+  }
+}
 
 
-@media (max-width: 768px) {
+
+
+/* @media (max-width: 768px) {
     .footer .container {
         flex-direction: column;
         align-items: center;
@@ -124,4 +251,48 @@
     .footer .container .links ul {
         padding-left: 0;
     }
+} */
+
+/* @media (max-width: 768px) and (min-width: 320px) {
+  .footer .container .about .logo {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .footer .container .about .logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .footer .container .about .icon {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .footer .container .about .icon ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer .container .about .icon ul li {
+    margin: 0;
+    padding: 10px;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+
+  .footer .container .about .icon ul li:hover {
+    background: #f3b123;
+    color: #fff;
+  }
 }
+
+ */

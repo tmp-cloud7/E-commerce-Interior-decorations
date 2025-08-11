@@ -140,9 +140,7 @@
     cursor: pointer;
 }
 
-/* Base styles remain the same */
 
-/* Responsive styles */
 @media (max-width: 1024px) {
     .wishcontainer {
       padding: 30px 20px;

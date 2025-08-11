@@ -39,7 +39,7 @@ const Product = ({product, setProduct, detail, view, close, setClose, addtocart,
                            <p>A design everyone will love: Whether for home or office purposes</p>
                            <h3><TbCurrencyNaira />{curElm.price}</h3>
                            <h5><TbCurrencyNaira />{curElm.old_price}</h5>
-                           <button>Add To Cart</button>
+                          <button onClick={() => addtocart(curElm)}>Add To Cart</button>
                        </div>
                    </div>
                )

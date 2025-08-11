@@ -12,23 +12,25 @@ const Footer = () => {
             <div className="container">
                 <div className="about">
                     <div className="logo">
-                        <img src="./img//header1.jpg" height= "50px" width="50px" alt="logo"></img>
+                        <img src="./img/header1.jpg" height= "50px" width="50px" alt="logo"></img>
                     </div>
                     <div className="detail">
                         <p>We are a team of designers and developers that creates high quality.</p>
                         <div className="icon">
+                        <ul>
                             <li>
-                            <Link to='https://www.facebook.com/' target="_blank"> <FaFacebook /></Link>   
+                            <a href='https://www.facebook.com/' target="_blank"> <FaFacebook /></a>   
                             </li>
                             <li>
-                            <Link to='https://www.instagram.com/' target="_blank"> <FaInstagram /></Link> 
+                            <a href='https://www.instagram.com/' target="_blank"> <FaInstagram /></a> 
                             </li>
                             <li>
-                            <Link to='https://www.twitter.com/' target="_blank"> <FaXTwitter /> </Link> 
+                            <a href='https://www.twitter.com/' target="_blank"> <FaXTwitter /> </a> 
                             </li>
                             <li>
-                            <Link to='https://www.youtube.com/' target="_blank"> <FiYoutube /></Link>
+                            <a href='https://www.youtube.com/' target="_blank"> <FiYoutube /></a>
                             </li>
+                        </ul>
                         </div>    
                     </div>
                 </div>

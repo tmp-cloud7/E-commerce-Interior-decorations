@@ -1,4 +1,5 @@
 *
+
 {
   margin: 0px; 
   padding: 0px;
@@ -67,10 +68,51 @@
   
 }
 
+.banner picture,
+.banner picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; 
+}
+
 .banner .container {
    max-width: 100%;
    min-height: auto;
    position: relative;  
+   padding: 0;
+   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .banner picture,
+  .banner picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner .text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    margin-top: -5px; 
+  }
+
+  .banner .text h3,
+  .banner .text p {
+    color: white;
+  }
+
+  .banner .text .link {
+    color: #f3b123;
+    text-decoration: underline;
+  }
 }
 
 .banner .container img {
@@ -166,9 +208,54 @@
 .product_type .container .box .detail p {
     margin-top: 10px;
 } 
+@media (max-width: 1024px) and (min-width: 765px) {
+  .product_type .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 
+  .product_type .container .box {
+    padding: 10px;
+    margin-left: 0;
+    flex: 0 1 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-  
+  .product_type .container .box .img_box {
+    width: 160px;
+    height: 160px;
+  }
+
+  .product_type .container .box .img_box img {
+    width: 70px;
+    height: 70px;
+    margin-top: 45px;
+    margin-left: 45px;
+  }
+
+  .product_type .container .box .detail {
+    max-width: 100%;
+    padding: 0 10px;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
+  .product_type .container .box .detail h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    word-break: break-word;
+  }
+
+  .product_type .container .box .detail p {
+    font-size: 14px;
+    margin-top: 6px;
+    word-break: break-word;
+  }
+}
 
 .about {
     padding: 40px 50px;
@@ -215,6 +302,91 @@
     margin-top: -7px;
  
     /* margin-top: -20px; */
+}
+
+@media (max-width: 1440px) {
+  .about .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .about .container .box {
+    width: 300px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    background: #e8f4ff;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  .about .container .box .icon {
+    font-size: 30px;
+    color: #e44c8c;
+    margin-right: 15px;
+    margin-top: 0;
+  }
+
+  .about .container .box .detail {
+    margin: 0;
+  }
+
+  .about .container .box .detail h3 {
+    font-size: 16px;
+    color: #555;
+    margin: 0 0 5px;
+  }
+
+  .about .container .box .detail p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 1024px) and (min-width: 765px) {
+  .about .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .about .container .box {
+    width: 45%; 
+    height: auto;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .about .container .box .icon {
+    font-size: 28px;
+    margin-top: 0;
+    margin-right: 15px;
+  }
+
+  .about .container .box .detail {
+    margin: 0;
+    text-align: left;
+  }
+
+  .about .container .box .detail h3 {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 5px;
+  }
+
+  .about .container .box .detail p {
+    font-size: 13px;
+    margin: 0;
+    color: #666;
+  }
 }
 
  .product {
@@ -489,6 +661,12 @@
 }
 
 @media (max-width: 1024px) {
+    /* html, body {
+    width: 768px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    } */
     .product_type .container .box {
       flex: 1 1 45%; /* 2 items per row */
     }
@@ -509,6 +687,12 @@
       }
   }
 @media (max-width: 768px) {
+    /* html, body {
+    width: 375px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  } */
     .top_banner .container {
         flex-direction: column;
         align-items: center;

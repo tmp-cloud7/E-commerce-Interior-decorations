@@ -15,21 +15,19 @@ function App() {
   const [detail, setDetail] = useState([])
   //filter product
   const [product, setProduct] = useState(Productdetail)
-  const searchbtn = (product) => {
-    const change = Productdetail.filter((x) => {
-      return x.category === product
-    })
-    setProduct(change)
-  }
-  //product detail
+  const searchbtn = (query) => {
+  const change = Productdetail.filter((x) =>
+    x.name.toLowerCase().includes(query.toLowerCase())
+  );
+  setProduct(change);
+};
+
   const view = (product) => {
     setDetail([{...product}])
     setClose(true)
   }
 
   // add to cart
-  
-
   const addtocart = (product) => {
     const exsit = cart.find((x) =>
       {
@@ -45,8 +43,6 @@ function App() {
   }
 
   // wishlist
-  
-
   const wishlist = (product) => {
     const exsit = wish.find((x) => {
       return x.id === product.id

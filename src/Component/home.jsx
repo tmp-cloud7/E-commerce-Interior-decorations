@@ -34,7 +34,7 @@ const Home = ({detail, view, close, setClose, addtocart, wishlist}) => {
                            <p>A design everyone will love: Whether for home or office purposes</p>
                            <h3><TbCurrencyNaira />{curElm.price}</h3>
                            <h5><TbCurrencyNaira />{curElm.old_price}</h5>
-                           <button>Add To Cart</button>
+                           <button onClick={() => addtocart(curElm)}>Add To Cart</button>
                        </div>
                    </div>
                )
@@ -48,7 +48,7 @@ const Home = ({detail, view, close, setClose, addtocart, wishlist}) => {
             <div className="container">
                 <div className="detail">
                     <h2>Design Your <br /> Comfort Zone </h2>
-                    <p>Carefully curated trinkets make your house a home, and <br /> express your peonality. But it's not just what you display, it's how you display it. </p>                   
+                    <p>Carefully curated trinkets make your house a home, and <br /> express your personality. But it's not just what you display, it's how you display it. </p>                   
                     <Link to='/product' className="link">Catalog</Link>
                 </div>
                 <div className="image_box">
