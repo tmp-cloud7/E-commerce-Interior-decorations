@@ -14,7 +14,7 @@ import Homeproduct from "./homeproduct";
 import './home.css'
 
 const Home = ({detail, view, close, setClose, addtocart, wishlist}) => {
-    const [homeproduct, setHomeProduct] = useState(Homeproduct);
+    const [homeproduct] = useState(Homeproduct);
     return(        
         <>
            {

@@ -12,7 +12,7 @@ import "./style.css";
 const Nav = ({ searchbtn }) => {
   const [search, setSearch] = useState("");
   const [suggestions, setSuggestions] = useState([]);
-  const [showSearch, setShowSearch] = useState(false);
+  const [showSearch] = useState(false);
   const navRef = useRef();
   const navigate = useNavigate(); 
 
