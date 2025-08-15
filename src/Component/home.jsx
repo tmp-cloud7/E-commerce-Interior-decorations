@@ -12,6 +12,7 @@ import { CiHeart } from "react-icons/ci";
 import { TbCurrencyNaira } from "react-icons/tb";
 import Homeproduct from "./homeproduct";
 import './home.css'
+
 const Home = ({detail, view, close, setClose, addtocart, wishlist}) => {
     const [homeproduct, setHomeProduct] = useState(Homeproduct);
     return(        

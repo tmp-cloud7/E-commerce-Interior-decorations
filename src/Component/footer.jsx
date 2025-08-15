@@ -19,16 +19,16 @@ const Footer = () => {
                         <div className="icon">
                         <ul>
                             <li>
-                            <a href='https://www.facebook.com/' target="_blank"> <FaFacebook /></a>   
+                            <a href='https://www.facebook.com/' target="_blank" rel="noreferrer"> <FaFacebook /></a>   
                             </li>
                             <li>
-                            <a href='https://www.instagram.com/' target="_blank"> <FaInstagram /></a> 
+                            <a href='https://www.instagram.com/' target="_blank" rel="noreferrer"> <FaInstagram /></a> 
                             </li>
                             <li>
-                            <a href='https://www.twitter.com/' target="_blank"> <FaXTwitter /> </a> 
+                            <a href='https://www.twitter.com/' target="_blank" rel="noreferrer"> <FaXTwitter /> </a> 
                             </li>
                             <li>
-                            <a href='https://www.youtube.com/' target="_blank"> <FiYoutube /></a>
+                            <a href='https://www.youtube.com/' target="_blank" rel="noreferrer"> <FiYoutube /></a>
                             </li>
                         </ul>
                         </div>    
