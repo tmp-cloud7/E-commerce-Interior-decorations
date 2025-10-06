@@ -38,6 +38,7 @@ trillium-homes/
 ├── public/
 │    ├── img/            
 ├── src/
+
 │   ├── components/              
 │   ├── App.js         
 │   └── index.js        
@@ -45,7 +46,7 @@ trillium-homes/
 
 🧑‍💻 Author
 Tayo Popoola
-Frontend Developer | Passionate about UI/UX & modern web design
+Fullstack Developer | Passionate about UI/UX & modern web design
 📧 tayopopoola92@gmail.com
 💼 www.linkedin.com/in/tayo-p-16a138275
 🌐 https://lucent-gnome-a196b3.netlify.app
