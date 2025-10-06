@@ -36,6 +36,7 @@ Netlify
 trillium-homes/
 
 ├── public/
+
 │    ├── img/            
 ├── src/
 
