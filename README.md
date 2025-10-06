@@ -45,8 +45,8 @@ trillium-homes/
 │   └── index.js        
 └── package.json
 
-🧑‍💻 Author
-Tayo Popoola
+🧑‍💻 Author:
+Tayo Popoola |
 Fullstack Developer | Passionate about UI/UX & modern web design
 
 📧 tayopopoola92@gmail.com
