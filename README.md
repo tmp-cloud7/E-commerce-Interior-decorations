@@ -39,8 +39,7 @@ trillium-homes/
 │    ├── img/            
 ├── src/
 
-│   ├── components/    
-│   ├── pages/           
+│   ├── components/              
 │   ├── App.js         
 │   └── index.js        
 └── package.json
