@@ -34,9 +34,11 @@ Netlify
 ⚙️ Project Structure
 
 trillium-homes/
+
 ├── public/
 │    ├── img/            
 ├── src/
+
 │   ├── components/    
 │   ├── pages/           
 │   ├── App.js         
