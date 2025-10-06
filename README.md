@@ -48,6 +48,7 @@ trillium-homes/
 🧑‍💻 Author
 Tayo Popoola
 Fullstack Developer | Passionate about UI/UX & modern web design
+
 📧 tayopopoola92@gmail.com
 
 💼 www.linkedin.com/in/tayo-p-16a138275
